@@ -1,0 +1,54 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio website for Onuh Emmanuel",
+  "author": "Onuh Emmanuel",
+  "license": "MIT",
+  "scripts": {
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "dev": "next dev",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm start",
+    "dev-legacy": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "build": "next build",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start",
+    "seed": "cd backend && node scripts/seedData.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "7.3.0",
+    "@prisma/adapter-pg": "7.3.0",
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.16.0",
+    "axios": "^1.6.2",
+    "framer-motion": "^10.16.5",
+    "next": "^14.0.0",
+    "nodemailer": "^7.0.12",
+    "pg": "^8.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-intersection-observer": "^9.8.1",
+    "three": "^0.161.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "prisma": "7.3.0"
+  },
+  "keywords": [
+    "portfolio",
+    "next.js",
+    "nodejs",
+    "postgresql",
+    "full-stack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onuhemmanuel/portfolio"
+  }
+}

@@ -1,0 +1,20 @@
+FROM postgres:15-alpine
+
+# Copy custom pg_hba.conf
+COPY pg_hba.conf /tmp/pg_hba.conf
+
+# Create an init script that sets up authentication
+RUN echo '#!/bin/bash\n\
+    set -e\n\
+    \n\
+    # Wait for PostgreSQL to start\n\
+    sleep 2\n\
+    \n\
+    # Replace pg_hba.conf to allow connections\n\
+    cp /tmp/pg_hba.conf /var/lib/postgresql/data/pg_hba.conf\n\
+    chmod 600 /var/lib/postgresql/data/pg_hba.conf\n\
+    chown postgres:postgres /var/lib/postgresql/data/pg_hba.conf\n\
+    \n\
+    # Signal postgres to reload config\n\
+    kill -HUP 1 || true\n\
+    ' > /docker-entrypoint-initdb.d/setup-auth.sh && chmod +x /docker-entrypoint-initdb.d/setup-auth.sh

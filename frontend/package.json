@@ -1,0 +1,51 @@
+{
+  "name": "portfolio-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website for Onuh Emmanuel",
+  "author": "Onuh Emmanuel",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-router-dom": "^6.21.3",
+    "@react-three/fiber": "^8.16.0",
+    "@react-three/drei": "^9.99.0",
+    "three": "^0.161.0",
+    "framer-motion": "^10.16.5",
+    "axios": "^1.6.2",
+    "react-icons": "^4.12.0",
+    "react-intersection-observer": "^9.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.31",
+    "webpack-dev-server": "^4.15.1",
+    "svgo": "^3.0.2",
+    "@svgr/webpack": "^6.5.1",
+    "resolve-url-loader": "^4.0.0"
+  }
+}
