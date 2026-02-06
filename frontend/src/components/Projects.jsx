@@ -49,7 +49,7 @@ const Projects = () => {
       description:
         'A full-featured e-commerce platform with cart, payment integration, and admin dashboard.',
       techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/Emmy1807/restuarant',
       liveUrl: 'https://example.com',
       imageUrl:
         '/images/e-classy.png',
@@ -60,8 +60,8 @@ const Projects = () => {
       description:
         'A mentorship initiative focused on personal growth, leadership development, and fostering meaningful connections through guided support and shared experiences.',
       techStack: ['React', 'Firebase', 'Tailwind CSS'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/Emmy1807/Peace-mentorship',
+      liveUrl: 'https://peace-mentorship-qgfa.vercel.app/',
       imageUrl:
         '/images/Screenshot 2026-01-13 214311.png',
     },
@@ -71,8 +71,8 @@ const Projects = () => {
       description:
         'A user friendly booking platform for Dr victor chukwu to share his insights and connect with his audience.',
       techStack: ['React', 'Chart.js', 'Express', 'PostgreSQL'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/Emmy1807/Dr.-Victor-Chukwu',
+      liveUrl: 'https://dr-victor-chukwu.vercel.app/',
       imageUrl:
         '/images/dr.ch.png',
     },
@@ -82,8 +82,8 @@ const Projects = () => {
       description:
         'An immersive movie website that brings films to life, rich visuals, trailers, and detailed movie insights.',
       techStack: ['React', 'OpenWeather API', 'CSS3'],
-      githubUrl: 'https://github.com/Emmy1807/Peace-mentorship',
-      liveUrl: 'https://peace-mentorship-qgfa.vercel.app/',
+      githubUrl: 'https://github.com/Emmy1807/mymovie',
+      liveUrl: 'https://mymovie-vert.vercel.app/',
       imageUrl: '/images/image.png',
     },
   ];

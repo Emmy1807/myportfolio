@@ -51,22 +51,22 @@ const Testimonials = () => {
     },
     {
       _id: '2',
-      name: 'Michael Chen',
-      position: 'Product Manager',
-      company: 'Digital Solutions',
-      message: 'Working with Emmanuel was a pleasure. He understood our requirements perfectly and built a robust, scalable solution that exceeded our expectations.',
+      name: 'Williams Godstime',
+      position: 'CEO',
+      company: 'D-Williams Fashion Hub',
+      message: 'Working with Emmanuel was a pleasure. He captured the essence of our brand and delivered a seamless, quality and creativity we stand for at D-Williams Fashion Hub.',
       rating: 5,
-      imageUrl: 'https://ui-avatars.com/api/?name=Michael+Chen&background=7b2cbf&color=fff&size=200',
+      imageUrl: '/images/williams.jpeg',
     },
-    {
-      _id: '3',
-      name: 'Emily Rodriguez',
-      position: 'Founder',
-      company: 'StartupHub',
-      message: 'Emmanuel transformed our vision into reality with his excellent coding skills and creative approach. Highly recommended for any web development project!',
-      rating: 5,
-      imageUrl: 'https://ui-avatars.com/api/?name=Emily+Rodriguez&background=00ff88&color=000&size=200',
-    },
+    // {
+    //   _id: '3',
+    //   name: 'Emily Rodriguez',
+    //   position: 'Founder',
+    //   company: 'StartupHub',
+    //   message: 'Emmanuel transformed our vision into reality with his excellent coding skills and creative approach. Highly recommended for any web development project!',
+    //   rating: 5,
+    //   imageUrl: 'https://ui-avatars.com/api/?name=Emily+Rodriguez&background=00ff88&color=000&size=200',
+    // },
   ];
 
   const nextTestimonial = () => {
