@@ -48,7 +48,7 @@ const Projects = () => {
       title: 'E-Classy Restuarant',
       description:
         'A full-featured e-commerce platform with cart, payment integration, and admin dashboard.',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      techStack: ['React', 'Tailwind CSS', 'MongoDB'],
       githubUrl: 'https://github.com/Emmy1807/restuarant',
       liveUrl: 'https://restuarant-neon.vercel.app/',
       imageUrl:
@@ -59,7 +59,7 @@ const Projects = () => {
       title: 'Peace mentorship',
       description:
         'A mentorship initiative focused on personal growth, leadership development, and fostering meaningful connections through guided support and shared experiences.',
-      techStack: ['React', 'Firebase', 'Tailwind CSS'],
+      techStack: ['React', 'Node.js', 'Tailwind CSS'],
       githubUrl: 'https://github.com/Emmy1807/Peace-mentorship',
       liveUrl: 'https://peace-mentorship-qgfa.vercel.app/',
       imageUrl:
@@ -70,7 +70,7 @@ const Projects = () => {
       title: 'Dr Victor Chukwu',
       description:
         'A user friendly booking platform for Dr victor chukwu to share his insights and connect with his audience.',
-      techStack: ['React', 'Chart.js', 'Express', 'PostgreSQL'],
+      techStack: ['React', 'Node.js', 'Tailwind.CSS', 'PostgreSQL'],
       githubUrl: 'https://github.com/Emmy1807/Dr.-Victor-Chukwu',
       liveUrl: 'https://dr-victor-chukwu.vercel.app/',
       imageUrl:
@@ -81,7 +81,7 @@ const Projects = () => {
       title: 'Filmfinity',
       description:
         'An immersive movie website that brings films to life, rich visuals, trailers, and detailed movie insights.',
-      techStack: ['React', 'OpenWeather API', 'CSS3'],
+      techStack: ['React', 'Tailwind CSS', 'Node.js'],
       githubUrl: 'https://github.com/Emmy1807/mymovie',
       liveUrl: 'https://mymovie-vert.vercel.app/',
       imageUrl: '/images/image.png',

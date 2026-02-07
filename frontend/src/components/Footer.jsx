@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: FiGithub, href: 'https://github.com/emmy1807', label: 'GitHub' },
     { icon: FiLinkedin, href: 'https://www.linkedin.com/in/emmanuel-onuh-6b828735b/', label: 'LinkedIn' },
-    { icon: FiTwitter, href: 'https://twitter.com/onuhemmanuel', label: 'Twitter' },
+    // { icon: FiTwitter, href: 'https://twitter.com/onuhemmanuel', label: 'Twitter' },
     { icon: FiMail, href: 'mailto:emmanuelonuh141@gmail.com', label: 'Email' },
   ];
 
