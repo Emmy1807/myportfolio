@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -7,6 +7,19 @@ const About = () => {
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+
+  const openModal = (certificate) => {
+    setModalContent(certificate);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent(null);
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -89,8 +102,51 @@ const About = () => {
               </div>
             </motion.div>
           </div>
+
+          <motion.div className="certificates-section" variants={itemVariants}>
+            <h3 className="certificates-title">Certifications</h3>
+            <div className="certificates-grid">
+              <div className="certificate-card">
+                <div className="certificate-info">
+                  <h4 className="certificate-name">Full Stack Web Development Professional Certificate</h4>
+                  <p className="certificate-issuer">Issued by Loctech</p>
+                  <p className="certificate-date">Completed: May 2025</p>
+                  <button 
+                    className="view-certificate-btn" 
+                    onClick={() => openModal({
+                      name: 'Full Stack Web Development Professional Certificate',
+                      image: '/images/IMG_0246.jpg', // Replace with actual image URL
+                 // Replace with actual verification link
+                    })}
+                  >
+                    View Certificate
+                  </button>
+                </div>
+              </div>
+              {/* Add more certificate cards here if needed */}
+            </div>
+          </motion.div>
         </motion.div>
       </div>
+
+      {/* Certificate Modal */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>×</button>
+            <h3>{modalContent?.name}</h3>
+            <img src={modalContent?.image} alt={modalContent?.name} className="certificate-image" />
+            <a 
+              href={modalContent?.verificationLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="verification-link"
+            >
+              Verify Certificate
+            </a>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
