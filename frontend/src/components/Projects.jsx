@@ -50,7 +50,7 @@ const Projects = () => {
         'A full-featured e-commerce platform with cart, payment integration, and admin dashboard.',
       techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       githubUrl: 'https://github.com/Emmy1807/restuarant',
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://restuarant-neon.vercel.app/',
       imageUrl:
         '/images/e-classy.png',
     },
