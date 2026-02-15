@@ -111,7 +111,7 @@ const Hero = () => {
               Get In Touch
             </motion.a>
             <motion.a
-              href="/Simple Professional CV Resume (2).pdf"
+              href="/images/Simple Professional CV Resume (2) (2) (1).pdf"
               download
               className="btn btn-secondary"
               whileHover={{ scale: 1.05 }}
